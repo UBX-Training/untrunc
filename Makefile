@@ -116,7 +116,7 @@ $(FFDIR)/config.asm: | $(FFDIR)/configure
 	--disable-everything --enable-decoders --disable-vdpau --enable-demuxers --enable-protocol=file \
 	--disable-avdevice --disable-swresample --disable-swscale --disable-avfilter --disable-postproc \
 	--disable-xlib --disable-vaapi --disable-zlib --disable-bzlib --disable-lzma \
-	--disable-vda --disable-audiotoolbox --disable-videotoolbox
+	--disable-vda --disable-audiotoolbox --disable-videotoolbox --disable-asm
 
 $(FFDIR)/libavcodec/libavcodec.a: | $(FFDIR)/config.asm
 	cat $(FFDIR)/Makefile
